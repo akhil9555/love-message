@@ -4,7 +4,7 @@ messageDiv.className = 'message';
 
 // Create the heading element
 const heading = document.createElement('h1');
-heading.textContent = 'Hey Pipz 🌙,';
+heading.textContent = 'Hey Neemu 🌙';
 
 // Create the paragraph elements
 const paragraph1 = document.createElement('p');
