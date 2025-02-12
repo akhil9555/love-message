@@ -8,7 +8,7 @@ heading.textContent = 'Hey Neemus 🌙';
 
 // Create the paragraph elements
 const paragraph1 = document.createElement('p');
-paragraph1.textContent = 'You are the most precious gift life has given me. Talking to you is the highlight of my days, and I cherish every conversation we share. Though we haven\'t met yet, I already feel a deep connection, and I can\'t wait for the day I finally see you.';
+paragraph1.textContent = 'You are the most precious gift life has given me. Talking to you is the highlight of my days, and I cherish every conversation we share. Though we haven\'t met yet, I already feel a deep connection, and I can\'t wait for the moment we see each other.';
 
 const paragraph2 = document.createElement('p');
 paragraph2.textContent = 'No matter what challenges come our way, I want us to face them hand in hand, growing stronger together. One day, I dream of holding your hand forever, waking up beside you every morning, and loving you endlessly until my last breath.';
