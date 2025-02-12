@@ -38,3 +38,14 @@ document.body.style.textAlign = 'center';
 document.body.style.padding = '20px';
 
 messageDiv.style.maxWidth = '600px';
+
+// Background Music Logic
+const backgroundMusic = document.getElementById('background-music');
+
+// Start music after user interaction (e.g., click)
+document.addEventListener('click', () => {
+    backgroundMusic.play();
+});
+
+// Optional: Hide the audio element
+backgroundMusic.style.display = 'none';
