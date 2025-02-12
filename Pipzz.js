@@ -4,7 +4,7 @@ messageDiv.className = 'message';
 
 // Create the heading element
 const heading = document.createElement('h1');
-heading.textContent = 'Hey Neemu 🌙';
+heading.textContent = 'Hey Neemus 🌙';
 
 // Create the paragraph elements
 const paragraph1 = document.createElement('p');
@@ -40,12 +40,13 @@ document.body.style.padding = '20px';
 messageDiv.style.maxWidth = '600px';
 
 // Background Music Logic
-const backgroundMusic = document.getElementById('background-music');
+window.onload = () => {
+    const backgroundMusic = document.getElementById('background-music');
+    backgroundMusic.muted = true; // Start muted
+    backgroundMusic.play(); // Start playing
 
-// Start music after user interaction (e.g., click)
-document.addEventListener('click', () => {
-    backgroundMusic.play();
-});
-
-// Optional: Hide the audio element
-backgroundMusic.style.display = 'none';
+    // Unmute after a short delay
+    setTimeout(() => {
+        backgroundMusic.muted = false;
+    }, 1000); // 1 second delay
+};
