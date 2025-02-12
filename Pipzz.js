@@ -40,13 +40,12 @@ document.body.style.padding = '20px';
 messageDiv.style.maxWidth = '600px';
 
 // Background Music Logic
-window.onload = () => {
-    const backgroundMusic = document.getElementById('background-music');
-    backgroundMusic.muted = true; // Start muted
-    backgroundMusic.play(); // Start playing
+const backgroundMusic = document.getElementById('background-music');
 
-    // Unmute after a short delay
-    setTimeout(() => {
-        backgroundMusic.muted = false;
-    }, 1000); // 1 second delay
-};
+// Start music after user interaction (e.g., click)
+document.addEventListener('click', () => {
+    backgroundMusic.play();
+});
+
+// Optional: Hide the audio element
+backgroundMusic.style.display = 'none';
